@@ -1,0 +1,33 @@
+functions:-
+************
+-function is a block of code used to execute specific task assigned to it.
+-function is a non-primitive data type.
+-function can be reusable.
+
+syntax:-
+function function_name(optional parameters){//functiondefination
+        //statements
+        }
+    function_name(args)
+
+Types of functions:-
+************
+1.Named function
+2.anonymus function
+3.function expression
+4.Immediate invoke functon expression(IIFE):-
+    -once the function created immediatley it should be involved.
+5.Arrow function
+    -it is used to concise the normal syntax.
+    -syntax:-  ()=>{};
+    -Arrow function is similar to anonymus function
+6.Higher order function
+7.callback function
+
+
+
+
+Note:-
+    -current version of javascript is es14.
+    -es6 -is stable version
+    es- ECMA script
