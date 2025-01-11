@@ -26,7 +26,7 @@ Types of functions:-
 7.callback function:-
     function that is passed as an argument or value in another function
 
--------------------------------
+-------------------------------------------------------------------
 
 closure:-
     -closure is a memory where functions are bundled together/functions are nested each other
@@ -40,5 +40,58 @@ Note:-
     -es6 -is stable version
     es- ECMA script
 
+-------------------------------------------------------------------
 
+Arrays:-
+***********
+    -Array can store multiple values within a single variable.
+    -collection of items / values.
+    -array can store homogenous values and heterogenous values.
+    Syntax:- []
+
+
+    ex:-   
+
+map and for each differences:-
+    map:-it is used to iterate the values and return the array
+
+methods in array:-
+*****************
+push(),pop(), unshift(), shift(), reverse(), join(), concat()
+
+what is object ?
+-object is an entry which is used to store the values in the form of key & value pairs .
+-object is aphysical entity which is having states(properties) and beheaviours(methods).
+
+syntax:-  let obj = {};
+
+notes:-  object based language + OOPs
+
+ex:-   let obj={
+           name:"sai"
+           age:20
+           }
+
+JSON (JavaScript Object Notation):-
+    - JSON is a lightweight data interchange format.
+    - It is easy for humans to read and write.
+    - It is easy for machines to parse and generate.
+    - JSON is a text format that is completely language independent.
+    
+
+Syntax:-
+    {
+        "key": "value"
+    }
+
+Example:-
+    let jsonString = '{"name": "John", "age": 30, "city": "New York"}';
+    let jsonObject = JSON.parse(jsonString);
+
+    console.log(jsonObject.name); // Output: John
+
+Methods in JSON:-
+*****************
+    - JSON.parse(): Parses a JSON string and returns a JavaScript object.
+    - JSON.stringify(): Converts a JavaScript object into a JSON string.
 

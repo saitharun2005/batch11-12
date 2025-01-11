@@ -88,17 +88,37 @@
 //     return a+b
 // }
 
-//closure
-var a=100;
-let b="hi";
-function x(){
-    var user="saitharun";
-    let company="google";
-    const sal=123456789;
-    console.log(user);
-    console.log(company);
-    console.log(sal);
-    console.log(a);
-    console.log(b);
-};
+// //closure
+// var a=100;
+// let b="hi";
+// function x(){
+//     var user="saitharun";
+//     let company="google";
+//     const sal=123456789;
+//     console.log(user);
+//     console.log(company);
+//     console.log(sal);
+//     console.log(a);
+//     console.log(b);
+// };
+// x();
+
+function x() {
+    let a=10;
+    const b =20;
+    console.log(a,b);
+    function y(){
+        let p="JS";
+        var q="ReactJS";
+        console.log(p,q);
+        function z(){
+            const username ="saitharun";
+            console.log(username);
+            console.log(a);
+            console.log(b);
+        }
+        z();
+    }
+    y();
+}
 x();
