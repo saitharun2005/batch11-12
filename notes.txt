@@ -317,3 +317,9 @@ Innertext:-
 innnertext is used to manipulate / add just plain text.
 inner HMTL:-
 it is a property 
+
+
+Dynamic creation of html element from java script:-
+**************************************************
+-to create a dynamic element in javascript we have a method called as"document.createelement()".
+-to create an attribute 
