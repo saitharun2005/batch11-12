@@ -168,14 +168,43 @@ let form = document.querySelector("form");
 let username = document.getElementById('uName');
 let password =  document.getElementById("uPass");
 
+
+let check=document.getElementById("check");
+let show=document.getElementById("show");
+
 let gender= document.getElementsByName("gender");
+
+check.addEventListener("click", event=>{
+    if(event.target.checked == true){
+        password.setAttribute("type","text");
+        show.innerText="Hide Password";
+    }else{
+        password.setAttribute("type","password");
+        show.innerText="show Password";
+    }
+})
 
 form.addEventListener("submit",(event)=>{
     event.preventDefault();
     let uname = username.value;
     let upass = password.value;
-    let ugen = gender.value;
+    // let ugen = gender.value;
 
-    console.log(uname,upass,ugen);
+    for(let i=0;i<=gender.length-1;i++){
+        // console.log(gender[i].checked);
+        if(gender[i].checked == true){
+            gen = gender[i].value;
+        }
+    }
+
+    let userDetails={
+        username:uname,
+        password:upass,
+        gender:gen
+    }
+
+    console.log(userDetails);
+    localStorage.setItem("userData",
+        JSON.stringify(userDetails))
 
 })
